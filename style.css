@@ -1,0 +1,171 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue)
+
+}
+
+.main-container {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-container {
+    width: 28.1rem;
+    height: 44.5rem;
+    background-color: var(--Verypaleblue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.padding {
+    margin: 1.5rem 3rem;
+}
+
+.image-container img {
+    border-radius: 1rem 1rem 0 0;
+}
+ 
+.order-container {
+    text-align: center;
+}
+
+.order-container h2 {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.order-container p {
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+}
+.plan-container {
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(241, 243, 253);
+    font-size: 0.7rem;
+}
+
+.plan-container .plan {
+    position: relative;
+    right: 2rem;
+}
+
+.plan-container .plan h2 {
+    color: var(--Dark-blue);
+
+}
+
+.plan-container .plan p {
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    padding-top: .1rem;
+}
+.change {
+    font-size: .8rem;
+}
+.change a {    
+    color: var(--Bright-blue);
+}
+
+.change a:hover {
+    color: #4d42ce;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.botones .pay {
+    background-color: var(--Bright-blue);
+    color: #fff;
+}
+
+.botones .cancel {
+    margin-top: .5rem;
+    color: var(--Desaturated-blue);
+}
+
+.botones .pay:hover {
+    background-color: #4d42ce;
+}
+
+.botones .cancel:hover {
+    color: #000;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 500px) {
+    .main-container {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .box-container {
+        width: 90%;
+    }    
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .order-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .order-container p {
+        font-size: .85rem;
+    }
+
+    .plan-container .plan {
+        position: inherit;
+    }
+
+    .plan-container .plan h2 {
+        font-size: .9rem;
+    }   
+    .plan-container .plan p {
+        font-size: .7rem;
+    }
+    .plan-container {
+        justify-content: space-between;
+    }
+}
